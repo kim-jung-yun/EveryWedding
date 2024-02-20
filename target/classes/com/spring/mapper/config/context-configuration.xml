@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.spring.dto.EnterpriseDTO" alias="entDto"/>
+		<typeAlias type="com.spring.dto.UserDTO" alias="userDto"/>
+		<typeAlias type="com.spring.dto.LoginDTO" alias="loginDto"/>
+		<typeAlias type="com.spring.dto.WeddingInfoDTO" alias="weddingInfoDto"/>
+		<typeAlias type="com.spring.dto.EstimationDTO" alias="estimationDto"/>
+		<typeAlias type="com.spring.dto.CartDTO" alias="cartDto"/>
+			
+	
+	</typeAliases>
+</configuration>

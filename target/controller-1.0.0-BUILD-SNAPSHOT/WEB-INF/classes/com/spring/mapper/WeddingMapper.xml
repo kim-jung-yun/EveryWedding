@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.mapper.WeddingMapper">
+
+	<select id="selectEntListAll" resultType="entDto">
+		select * from enterprise_info
+	</select>
+	
+	<select id="returnEntInfo" parameterType="string" resultType="entDto" >
+		select * from enterprise_info where ent_id=#{ent_id}
+	</select>
+	
+	<select id="returnEntImgCount" parameterType="string" resultType="_int" >
+		select total from ent_img where ent_id=#{ent_id}
+	</select>
+	
+	<select id="returnTotalSearchResult" parameterType="string" resultType="entDto" >
+		select * from enterprise_info where ent_name like #{search_word} or region like #{search_word} or address like #{search_word} 	
+	</select>
+	
+	<insert id="insertUserInfo" parameterType="userDto">
+		insert into user_info values(#{user_id},sha2(#{user_pw},256),#{user_name},0,#{phone},#{email})
+	</insert>
+	
+	<select id="idCheck" parameterType="string" resultType="_int" >
+		select count(*) from user_info where user_id = #{id} 	
+	</select>
+	
+	<select id="userLoginCheck" parameterType="loginDto" resultType="_int" >
+		select count(*) from user_info where user_id = #{user_id} and user_pw = sha2(#{user_pw},256)
+	</select>
+	
+	<select id="entLoginCheck" parameterType="loginDto" resultType="_int" >
+		select count(*) from enterprise_info where ent_id = #{user_id} and ent_pw = sha2(#{user_pw},256)
+	</select>
+	
+	<select id="getUserName" parameterType="loginDto" resultType="string" >
+		select user_name from user_info where user_id=#{user_id}
+	</select>
+	
+	<select id="getEntName" parameterType="loginDto" resultType="string" >
+		select ent_name from enterprise_info where ent_id=#{user_id}
+	</select>
+	
+	<select id="selectLoginInfo" resultType="loginDto" >
+		select * from login_info
+	</select>
+	
+	<insert id="insertLoginInfo" parameterType="loginDto">
+		insert into login_info values(#{user_id},#{user_pw},#{user_name},#{user_type})
+	</insert>
+	
+	<delete id="deleteLoginInfo">
+		delete from login_info
+	</delete>
+	
+	<select id="returnEntSearchResult" parameterType="com.spring.dto.DetailSearchDTO" resultType="entDto" >
+	    select * from enterprise_info where
+	    <choose>
+	        <when test="!region.equals('')">
+	            region = #{region}
+	            <choose>
+	                <when test="season.equals('peak')">
+		                    <choose>
+		                        <when test="!min.equals('') and !max.equals('')">
+		                            and peak &gt;= #{min} and peak &lt;= #{max}
+		                        </when>
+		                        <when test="!min.equals('')">
+		                            and peak &gt;= #{min}
+		                        </when>
+		                        <when test="!max.equals('')">
+		                            and peak &lt;= #{max}
+		                        </when>							
+		                    </choose>
+	                </when>
+	                <when test="season.equals('off')">
+		            	<choose>
+		                        <when test="!min.equals('') and !max.equals('')">
+		                            and off &gt;= #{min} and off &lt;= #{max}
+		                        </when>
+		                        <when test="!min.equals('')">
+		                            and off &gt;= #{min}
+		                        </when>
+		                        <when test="!max.equals('')">
+		                            and off &lt;= #{max}
+		                        </when>							
+						</choose>
+	                </when>
+	                <when test="season.equals('-1')">
+	                    <choose>
+	                        <when test="!ent_code.equals('-1')">
+	                            and code_id = #{ent_code}
+	                        </when>
+	                    </choose>
+	                </when>
+	            </choose>
+	        </when>
+	        <when test="region.equals('')">
+	            <choose>
+	            	<when test="season.equals('peak')">
+	                    <choose>
+	                        <when test="!min.equals('') and !max.equals('')">
+	                            peak &gt;= #{min} and peak &lt;= #{max}
+	                        </when>
+	                        <when test="!min.equals('')">
+	                            peak &gt;= #{min}
+	                        </when>
+	                        <when test="!max.equals('')">
+	                            peak &lt;= #{max}
+	                        </when>							
+	                   	</choose>
+	               	</when>
+	               	<when test="season.equals('off')">
+	                    <choose>
+	                        <when test="!min.equals('') and !max.equals('')">
+	                            off &gt;= #{min} and off &lt;= #{max}
+	                        </when>
+	                        <when test="!min.equals('')">
+	                            off &gt;= #{min}
+	                        </when>
+	                        <when test="!max.equals('')">
+	                            off &lt;= #{max}
+	                        </when>							
+	                   	</choose>                    
+	                </when>
+	                <when test="season.equals('-1')">
+	                    <choose>
+	                        <when test="!ent_code.equals('-1')">
+	                             code_id = #{ent_code}
+	                        </when>
+	                    </choose>
+	                </when>
+	            </choose>				
+	        </when>
+	    </choose>
+	</select>
+	
+	
+</mapper>
