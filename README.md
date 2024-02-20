@@ -42,6 +42,14 @@ https://github.com/kim-jung-yun/EveryWedding/assets/138330814/2d5345ad-ec7a-4520
 
 
 
+
+https://github.com/kim-jung-yun/EveryWedding/assets/138330814/be9b35fb-c172-48f5-afc2-3546892e0bbf
+
+
+https://github.com/kim-jung-yun/EveryWedding/assets/138330814/a9e4b039-2765-4fa7-b504-add0ed4447c0
+
+
+
 <br /><br />
 
 ### 6. 상세페이지<br />
