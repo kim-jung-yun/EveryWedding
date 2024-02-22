@@ -42,7 +42,9 @@ https://github.com/kim-jung-yun/EveryWedding/assets/138330814/a9e4b039-2765-4fa7
 <br /><br />
 
 ### 5. 커뮤니티기능<br />
-+ 글조회,삭제,수정
++ 글조회,삭제,수정<br />
+
+![image](https://github.com/kim-jung-yun/EveryWedding/assets/138330814/124779bb-8925-4286-b41c-51a47d697975)
 
 
 # 기술스택
