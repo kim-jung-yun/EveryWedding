@@ -10,11 +10,15 @@
 + 기대효과 : 결혼이용자와 결혼업체 모두에게 신뢰성있는 거래 제공
 
 # 기능 
-### 1. 회원가입 및 로그인
+### 1. 회원가입 및 로그인<br />
 https://github.com/kim-jung-yun/EveryWedding/assets/138330814/86eb5293-acd4-400f-9b4e-4dc9cfe03ac4
 <br /><br />
 
-### 2. 로그인<br />
+### 2. 예약하기<br />
++ 홀목록조회
++ 검색어 조회
++ 조건 조회
+https://github.com/kim-jung-yun/EveryWedding/assets/138330814/be9b35fb-c172-48f5-afc2-3546892e0bbf
 <br /><br />
 
 ### 3. 판매글 작성, 수정, 삭제<br />
@@ -35,7 +39,6 @@ https://github.com/kim-jung-yun/EveryWedding/assets/138330814/2d5345ad-ec7a-4520
 
 
 
-https://github.com/kim-jung-yun/EveryWedding/assets/138330814/be9b35fb-c172-48f5-afc2-3546892e0bbf
 
 
 https://github.com/kim-jung-yun/EveryWedding/assets/138330814/a9e4b039-2765-4fa7-b504-add0ed4447c0
