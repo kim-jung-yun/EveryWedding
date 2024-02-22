@@ -12,7 +12,6 @@
 # 기능 
 ### 1. 회원가입 및 로그인
 https://github.com/kim-jung-yun/EveryWedding/assets/138330814/86eb5293-acd4-400f-9b4e-4dc9cfe03ac4
-
 <br /><br />
 
 ### 2. 로그인<br />
