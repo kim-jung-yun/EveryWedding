@@ -33,8 +33,12 @@ https://github.com/kim-jung-yun/EveryWedding/assets/138330814/2d5345ad-ec7a-4520
 
 <br /><br />
 
-### 4. 중고책 오염도 등록<br />
-+ 책상태에 따른 오염도 체킹기능으로 오염도 점수 계산<br />
+### 4. 예약문의<br />
++ 셀프견적문의에 따른 예약 문의<br />
+
+https://github.com/kim-jung-yun/EveryWedding/assets/138330814/a9e4b039-2765-4fa7-b504-add0ed4447c0
+
+
 <br /><br />
 
 ### 5. 게시글 검색 및 조회<br />
@@ -49,7 +53,6 @@ https://github.com/kim-jung-yun/EveryWedding/assets/138330814/2d5345ad-ec7a-4520
 
 
 
-https://github.com/kim-jung-yun/EveryWedding/assets/138330814/a9e4b039-2765-4fa7-b504-add0ed4447c0
 
 
 
