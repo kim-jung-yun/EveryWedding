@@ -17,8 +17,8 @@ https://github.com/kim-jung-yun/EveryWedding/assets/138330814/42a8192d-f093-4bba
 
 ### 2. 예약하기<br />
 + 홀목록조회
-+ 검색어 조회
-+ 조건 조회
++ 통합검색
++ 조건검색
   
 https://github.com/kim-jung-yun/EveryWedding/assets/138330814/be9b35fb-c172-48f5-afc2-3546892e0bbf
 
@@ -41,27 +41,9 @@ https://github.com/kim-jung-yun/EveryWedding/assets/138330814/a9e4b039-2765-4fa7
 
 <br /><br />
 
-### 5. 게시글 검색 및 조회<br />
-+ 해당하는 대학교의 모든 책 거래내역 조회
-+ 셀프견적
+### 5. 커뮤니티기능<br />
++ 글조회,삭제,수정
 
-
-
-
-
-
-
-
-
-
-
-
-<br /><br />
-
-### 6. 상세페이지<br />
-+ 판매하는 거래내역의 상세 내용
-+ 책사진 및 오염도 상세내용
-+ 게시글 수정,삭제
 
 # 기술스택
 + JSP
