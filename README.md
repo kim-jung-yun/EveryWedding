@@ -24,7 +24,13 @@ https://github.com/kim-jung-yun/EveryWedding/assets/138330814/be9b35fb-c172-48f5
 
 <br /><br />
 
-### 3. 판매글 작성, 수정, 삭제<br />
+### 3. 셀프견적<br />
++ 결혼예상일자
++ 결혼예산금액
++ 결혼준비항목
+  
+https://github.com/kim-jung-yun/EveryWedding/assets/138330814/2d5345ad-ec7a-4520-8b42-46a9e522d910
+
 <br /><br />
 
 ### 4. 중고책 오염도 등록<br />
@@ -36,7 +42,6 @@ https://github.com/kim-jung-yun/EveryWedding/assets/138330814/be9b35fb-c172-48f5
 + 셀프견적
 
 
-https://github.com/kim-jung-yun/EveryWedding/assets/138330814/2d5345ad-ec7a-4520-8b42-46a9e522d910
 
 
 
